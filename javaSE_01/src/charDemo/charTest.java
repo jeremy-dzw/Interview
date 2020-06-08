@@ -16,7 +16,7 @@ public class charTest
 {
     public static void main(String[] args)
     {
-//        char c = '伟';//该变量占用两个字节
+       char c = '伟';//该变量占用两个字节
 //        short s1 = 1;
 //        s1 = (short) (s1 +1);
 //        System.out.println(c);
