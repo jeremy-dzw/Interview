@@ -33,6 +33,8 @@ public class charTest
         System.out.println(s1==s2);
         System.out.println(s3==s4);
         System.out.println(s3.equals(s4));
+        String d = new String("hello");
+        String f = new String("hello");
     }
 }
 class person
