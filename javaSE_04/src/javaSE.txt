@@ -1,0 +1,22 @@
+(1)Collection和Collections的区别如下：
+   Collection是List和Set的父接口
+   Collections是一个工具类，里面定义了一系列操作容器的静态方法
+(2)ArrayList、LinkedList、Vector储存性能和特性
+   ArrayList:查询快，增删慢，线程不安全(起始容量，扩容因子，扩容倍数)
+   LinkedList:查询慢，增删快，线程不安全(起始容量，扩容因子，扩容倍数)
+   Vector:查询快，增删慢，同步的，线程安全
+(3)编译时异常和运行时异常的区别
+   编译时异常必须要用throws声明 / try...catch解决才能通过编译，throws声明的原因在于让调用者解决掉异常;而try...catch是自己解决
+   运行时异常不需要进行任何的声明，因为程序在运行过程中遇到异常，就已经没有办法再继续往下执行，需要程序员手动修改代码
+
+   Java异常Throwable分为两类：Error和Exception
+   Error类是错误，程序本身不能处理的。
+   Exception有分为两类：IOException（非运行时异常）和RuntimeException（运行时异常）
+   其中RuntimeException是在程序设计时尽量避免的。
+   除了RuntimeException及其子类以外，其他的Exception类及其子类都属于可查异常。这种异常编译器要求强制处置，要么try-cathch,要么在方法名后面抛出。
+   不可查异常(编译器不要求强制处置的异常):包括运行时异常（RuntimeException与其子类）和错误（Error）。
+
+(4)java与javaScript的区别
+   java是面向对象的语言，而JS是脚本语言
+   java需要编译才能执行；而JS只需要浏览器解释就能执行
+   java是强类型语言，JS是弱类型语言
