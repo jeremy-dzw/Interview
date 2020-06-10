@@ -1,0 +1,16 @@
+(1)Statement与PreparedStatement的区别
+  PreparedStatement可以防止SQL注入的安全问题
+  PreparedStatement语句是可以带参数的，避免了用字符串来拼接SQL引发的安全和麻烦问题
+  当批处理SQL语句时，PreparedStatement的性能要比Statement高
+(2)java中的io流分类
+  字节流、字符流、转换流
+  字节流可用于处理任何类型的对象，而字符流只可以用来处理字符/字符串
+(3)synchronized方法和synchronized代码块的区别
+   synchronized代码块可以放置在任意地方，锁的对象可以是任意对象，但必须是同一对象
+   synchronized方法定义在方法上，锁的对象是this
+   当有线程的数量比较多时，synchronized代码块的执行效率明显高于synchronized方法
+(4)常见的5个RuntimeException
+   ClassCastException、NullPointerException、ClassCastException、IndexOutOfBoundsException、FileNotFoundException
+
+(5)常见的设计模式
+   单例模式、代理模式、、工厂模式、模板方法模式、适配器模式、装饰者模式
