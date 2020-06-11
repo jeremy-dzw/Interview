@@ -14,3 +14,14 @@
 
 (5)常见的设计模式
    单例模式、代理模式、、工厂模式、模板方法模式、适配器模式、装饰者模式
+(6)传统for循环、增强for循环、迭代器的区别
+   传统for循环可以根据定义的角标来操作元素
+   所有的单例集合都可以通过增强for循环来进行遍历操作，但是在遍历的过程中不能进行其他的操作
+   所有的集合都可以通过迭代器来遍历元素
+(7)synchronized和Lock的区别
+   synchronized的获取锁和释放锁是程序员看不见的；而Lock是显示的获取/释放锁
+   当线程数量较多的时候，Lock锁的效率明显高于synchronized
+   synchronized是java的关键字，而Lock是一个类
+(8)hashMap和hashTable的区别
+   HashMap允许将null作为一个entry的key或者value，而Hashtable不允许。
+   Hashtable的方法是Synchronize的，而HashMap不是，在多个线程访问Hashtable时，
