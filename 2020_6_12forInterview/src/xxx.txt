@@ -1,0 +1,46 @@
+(1)java中的异常种类？有什么区别？error和exception的区别
+   java中的异常分为接受检查异常和不接受检查的异常；不接受检查的异常不需要用throws关键字抛出异常，而接受检查的关键字则需要用throws抛出异常
+   error和exception都是Throwable的子类；error一旦发生，程序无法继续执行；exception发生，程序可以向上抛出或者是捕获解决
+(2)HashMap和HashTable的区别
+   HashMap中的键/值允许是NULL;而HashTable中不允许
+   HashMap是非线程安全的，用于单线程；而HashTable是线程安全的，用于多线程
+(3)JDK、JRE、JVM三者的区别
+   JDK = JRE + 编译器和其他工具
+   JRE = JVM +  java  packages
+   JVM就是一个纯的运行环境
+(4)线程中sleep()和wait()的区别
+   sleep()在休眠的时候不会释放锁，而wait()会释放锁
+   sleep()可以用在线程的任何地方，而wait()只能用在同步代码块中
+   sleep()是Therad类中的方法，wait()是Object类中的方法
+(5)Iterator和ListIterator的区别
+   Iterator可以用于遍历Set和List集合；而ListIterator只能用于遍历List集合
+   Iterator只能是前向遍历，而ListIterator既可以前向遍历，又可以后向遍历
+   ListIterator是实现了Iterator接口，功能更加的强大和丰富
+(6)Array和ArrayList的区别
+   Array是静态的，而ArrayList是动态的（集合的初始容量、扩容因子、扩容倍数）
+   Array中可以存放基本数据类型或者是对象，而ArrayList只能存放对象
+(7)HashSet、TreeSet、LinkedHashSet三者的区别
+   HashSet底层是哈希表，存取元素是无序的；而TreeSet和LinkedHashSet存取元素是有序的
+(8)什么叫线程安全
+   如果代码在多线程下执行的结果和单线程下执行的结果，永远都是一样的，那么代码就是线程安全的
+(9)java中的基本数据类型以及所占字节数，及其包装类
+   byte     1     Byte
+   char     2     Charactor
+   short    2     Short
+   int      4     Integer
+   float    4     Float
+   double   8     Double
+   long     6     Long
+   boolean  1     Boolean
+   JDK 1.5以后便有了自动装箱和拆箱的操作
+(10)java跨平台的原理
+   java编译成字节码文件，然后把字节码文件放到JVM中来运行
+   字节码文件是面向虚拟机；而虚拟机是面向不同的操作平台。
+   不同平台的JVM不同，但都提供了相同的接口
+(11)什么是数据的封装
+   在一个类中，定义了许多成员变量，将所有的成员变量都定义为私有的，并提供对外的set / get方法；使得外界不能随意的读取或者是修改
+   成员变量的值
+(12)java数组的特征
+   静态的，长度一旦确定就不能再改变了
+   能存放基本数据类型或者是引用数据类型
+   查询快，增删慢
